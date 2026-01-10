@@ -1,0 +1,184 @@
+.after12 {
+  font-family: Montserrat, sans-serif;
+  color: #1e293b;
+}
+
+/* ================= BACK BUTTON ================= */
+.after12 .back-btn {
+  margin: 30px 20px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgb(209, 143, 19) !important;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 30px;
+  padding: 11px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(209, 143, 19, 0.35);
+  transition: all 0.3s ease;
+}
+
+.after12 .back-btn:hover {
+  background-color: #1e3a8a !important;
+  transform: translateX(-6px);
+}
+
+/* ================= HEADER ================= */
+.after12-header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgb(255, 229, 181), #e6ecfd);
+  animation: fadeDown 1s ease;
+}
+
+.after12-header h1 {
+  font-size: 35px;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.after12-header span {
+  color: rgb(209, 143, 19);
+  font-size: 40px;
+}
+
+.after12-header p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* ================= CARDS GRID ================= */
+.after12-cards {
+  padding: 70px 20px;
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+/* ================= STREAM CARD ================= */
+.stream-card {
+  background: linear-gradient(rgb(241, 215, 167), #e6ecfd);
+  border-radius: 20px;
+  padding: 36px 30px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 1s ease forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+.stream-card:hover {
+  transform: translateY(-14px) scale(1.03);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.15);
+}
+
+.stream-card h2 {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin-bottom: 14px;
+}
+
+.stream-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 16px;
+}
+
+/* ================= OPTIONS LIST ================= */
+.stream-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 26px;
+}
+
+.stream-card ul li {
+  font-size: 14.5px;
+  color: #334155;
+  margin-bottom: 8px;
+  padding-left: 22px;
+  position: relative;
+  text-align: left;
+}
+
+.stream-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: rgb(209, 143, 19);
+  font-size: 14px;
+}
+
+/* ================= CARD BUTTON ================= */
+.stream-card a button {
+  margin-top: auto;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(209, 143, 19);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(209, 143, 19, 0.35);
+  transition: all 0.3s ease;
+}
+
+.stream-card a button:hover {
+  background-color: #1e3a8a;
+  transform: scale(1.05);
+  box-shadow: 0 10px 26px rgba(30, 58, 138, 0.35);
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .after12-header h1 {
+    font-size: 28px;
+  }
+
+  .after12-header span {
+    font-size: 34px;
+  }
+
+  .stream-card {
+    padding: 28px 22px;
+  }
+
+  .after12 .back-btn {
+    margin: 25px 16px 8px;
+  }
+}

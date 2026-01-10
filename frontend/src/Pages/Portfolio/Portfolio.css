@@ -1,0 +1,138 @@
+.portfolio {
+  font-family: Montserrat, sans-serif;
+  color: #1e293b;
+}
+
+/* HERO */
+.portfolio-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgb(240, 212, 161), #b7c0db);
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.portfolio-hero h1{
+  font-size: 30px;
+}
+
+.portfolio-hero h1 span {
+  color: rgb(170, 117, 19);
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.portfolio-hero p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 16px;
+}
+
+/* ABOUT */
+.portfolio-about {
+  padding: 60px 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.portfolio-about p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.7;
+  
+}
+
+/* SKILLS */
+.portfolio-skills h2{
+   padding: 10px 20px;
+  text-align: center;
+  font-size: 40px;
+}
+.portfolio-skills {
+  padding: 60px 20px;
+  background: linear-gradient(rgb(240, 212, 161), #b7c0db);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background: linear-gradient(135deg,  rgb(245, 238, 228), #e3e6f0);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.skill-card h3 {
+  margin-bottom: 15px;
+  color: #1e3a8a;
+  font-size: 24px;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card li {
+  padding: 6px 0;
+}
+
+/* PROJECTS */
+.portfolio-projects {
+  padding: 60px 20px;
+  text-align: center;
+  
+}
+.portfolio-projects h2{
+ 
+  text-align: center;
+  font-size: 40px; 
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background:linear-gradient(135deg,  rgb(245, 238, 228), #e3e6f0);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .portfolio-hero h1 {
+    font-size: 24px;
+  }
+
+  .portfolio-about p {
+    font-size: 15px;
+  }
+}

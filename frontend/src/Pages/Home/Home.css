@@ -1,0 +1,146 @@
+.home {
+  font-family: Montserrat, sans-serif;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 80px;
+  background: linear-gradient(rgb(255, 229, 181), #e6ecfd);
+}
+
+/* LEFT TEXT */
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  color: #1E3A8A;
+}
+
+.hero-text span {
+  color: rgb(209, 143, 19);
+  font-size: 46px;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  padding: 14px 30px;
+  background-color: rgb(209, 143, 19);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #1E3A8A;
+}
+
+/* RIGHT IMAGE */
+.hero-animation {
+  width: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* WHY */
+.why {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.why h2 {
+  font-size: 32px;
+  color: #1E3A8A;
+}
+
+.why p {
+  margin-top: 15px;
+  color: rgb(209, 143, 19);
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, rgb(245, 238, 228), #e3e6f0);
+  padding: 30px;
+  width: 280px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+  color: #1E3A8A;
+}
+
+.feature-card p {
+  margin-top: 10px;
+  color: #475569;
+}
+
+
+.cta {
+  background: linear-gradient(135deg, rgb(238, 199, 141), #8894d8);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: rgb(209, 143, 19);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background: rgb(164, 205, 221);
+  color: black;
+}

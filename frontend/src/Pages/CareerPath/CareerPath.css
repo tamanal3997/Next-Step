@@ -1,0 +1,217 @@
+.career-path {
+  font-family: Montserrat, sans-serif;
+  color: #1e293b;
+}
+
+
+
+.career-header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgb(255, 229, 181), #e6ecfd);
+  animation: fadeDown 1s ease;
+}
+
+.career-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1E3A8A;
+  margin-bottom: 14px;
+  
+}
+@keyframes lineExpand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes textPop {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.career-header h1 span{
+  color: rgb(209, 143, 19);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.career-header p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.career-cards {
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  max-width: 1150px;
+  margin: auto;
+}
+
+
+
+.career-card {
+  background: linear-gradient(135deg, rgb(233, 230, 226), #e3e6f0);
+  padding: 36px 30px;
+  border-radius: 20px;
+  border: 1.5px solid rgba(20, 184, 166, 0.35);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.4s ease;
+  animation: fadeUp 1s ease forwards;
+
+  /* 🔥 IMPORTANT PART */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+.career-card:hover {
+  transform: translateY(-14px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: #1e3a8a;
+}
+
+
+
+.career-card h2 {
+  font-size: 22px;
+  color: #1e3a8a;
+  margin-bottom: 14px;
+}
+
+.career-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 26px;
+}
+
+
+
+.career-card button {
+  margin-top: auto;   /* 🔥 button ko bottom par push karega */
+  padding: 12px 26px;
+  border: none;
+  border-radius: 30px;
+  background: rgb(209, 143, 19);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.career-card button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0f766e, #1e3a8a);
+}
+
+
+.career-card button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .career-header h1 {
+    font-size: 30px;
+  }
+
+  .career-card {
+    padding: 30px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .career-header h1 {
+    font-size: 26px;
+  }
+
+  .career-header p {
+    font-size: 15px;
+  }
+}.floating-icons {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.icon {
+  position: absolute;
+  font-size: 32px;
+  opacity: 0.7;
+  animation: float 6s ease-in-out infinite;
+}
+.icon1 {
+  top: 20%;
+  left: 10%;
+  animation-duration: 7s;
+}
+
+.icon2 {
+  top: 60%;
+  left: 15%;
+  animation-duration: 9s;
+}
+
+.icon3 {
+  top: 30%;
+  right: 12%;
+  animation-duration: 8s;
+}
+
+.icon4 {
+  top: 70%;
+  right: 18%;
+  animation-duration: 10s;
+}
+
+.icon5 {
+  top: 45%;
+  left: 50%;
+  animation-duration: 6s;
+}
+
