@@ -20,56 +20,44 @@
 }
 
 /* Navbar Item */
+/* AI Assistant Nav Item */
 .ai-nav {
   list-style: none;
-  margin: 0 10px;
-  font-size: medium;
 }
 
-/* AI Assistant Circular Button */
+/* Button Style */
 .ai-link {
-  display: inline-block;
-   padding: 16px 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: #1e3a8a; /* Blue text inside */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 120px;          /* Bigger square button */
+  height: 48px;
+
+  background-color: #ffffff;      /* White inside */
+  border: 2px solid #1e3a8a;       /* Dark blue border */
+  border-radius: 10px;             /* Soft square */
+
   text-decoration: none;
-  background-color: #ffffff; /* White inside */
-  border-radius: 20px; /* Perfect pill / circle shape */
-  border: 3px solid #1e3a8a; /* Dark blue border */
-  box-shadow: 0 0 10px rgba(30, 58, 138, 0.5); /* Shiny glow effect */
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;                 /* Font smaller than button */
+  font-weight: 600;
+  color: #1e3a8a;
+
   transition: all 0.3s ease;
-  position: relative;
 }
 
-/* Hover / Focus Effect */
-.ai-link:hover,
-.ai-link:focus {
-  border: 3px solid #3b5ac7; /* Slightly lighter shiny border on hover */
-  box-shadow: 0 0 15px rgba(30, 58, 138, 0.7); /* Stronger glow */
-  transform: scale(1.1); /* Slight pop effect */
-  color: #1e3a8a; /* Keep text blue */
-  outline: none;
+/* Hover Effect (Professional) */
+.ai-link:hover {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
-/* Optional inner shine animation (for extra attractiveness) */
-.ai-link::after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
-  border-radius: 50px;
-  border: 2px solid rgba(59,90,199,0.3); /* subtle shiny ring */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.ai-link:hover::after,
-.ai-link:focus::after {
-  opacity: 1;
+/* Active Page */
+.ai-link.active {
+  background-color: #1e3a8a;
+  color: #ffffff;
 }
 
 
@@ -113,6 +101,7 @@
   list-style: none;
   display: flex;
   gap: 30px;
+   align-items: center; 
 }
 
 

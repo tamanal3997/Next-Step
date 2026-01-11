@@ -49,6 +49,7 @@ function Navbar() {
         <Link to="/career-path" onClick={() => setMenuOpen(false)}>Career Path</Link>
         <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+        
       </div>
     </>
   );
