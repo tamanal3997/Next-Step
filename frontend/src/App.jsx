@@ -8,7 +8,7 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 import Contact from './Pages/Contact/Contact';
 import After12 from "./Pages/CareerPath/After12/After12";
 import Science from './Pages/CareerPath/After12/science/science';
-import Arts from './Pages/CareerPath/After12/arts/arts';
+import Arts from './Pages/CareerPath/After12/Arts/Arts';
 import Commerce from './Pages/CareerPath/After12/commerce/commerce';
 import AfterGraduation from "./Pages/CareerPath/AfterGraduation/AfterGraduation";
 import AI from "./AI";
@@ -27,7 +27,7 @@ function App() {
         <Route path="/career-path/after-12" element={<After12 />} />
         <Route path="/career-path/after-12/science" element={<Science />} />
         <Route path="/career-path/after-12/commerce" element={<Commerce />} />
-        <Route path="/career-path/after-12/arts" element={<Arts />} />
+        <Route path="/career-path/after-12/Arts" element={<Arts />} />
         <Route path="/career-path/after-graduation" element={<AfterGraduation />}/>
          <Route path="/ai-assistant" element={<AI />} />
       </Routes>
